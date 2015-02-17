@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head lang="en">
+    <meta charset="UTF-8">
+    <script src="bower_components/angular/angular.js"></script>
+    <title>Angular Routes</title>
+    <script>
+        var myapp = angular.module('myApp',[]).controller('MyController', function ($scope) {
+            $scope.message = 'Buenos Dias El Mundo!';
+        });
+
+    </script>
+</head>
+<body>
+<div ng-controller="MyController">
+    {{message}}
+</div>
+
+</body>
+</html>
